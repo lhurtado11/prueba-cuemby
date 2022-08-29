@@ -70,9 +70,9 @@ let getNations = async () => {
 };
 
 module.exports = async (req, res) => {
-  let responsePlayers = await getPlayers();
-  let responseClubs = await getClubs();
   let responseNations = await getNations();
+  let responseClubs = await getClubs();
+  let responsePlayers = await getPlayers();
 
   res.send("Success!!!");
   console.log("Success!!!");
